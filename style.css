@@ -3,6 +3,7 @@
 ===================== */
 
 :root{
+color-scheme: light dark;
   --clr-neutral-100: #ffffff;
   --clr-neutral-200: #dedede;
   --clr-neutral-300: #8c8c8c;
