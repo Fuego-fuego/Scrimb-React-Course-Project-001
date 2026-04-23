@@ -5,6 +5,10 @@ const root = createRoot(document.querySelector('#root'))
 
 root.render(<>
 <header>
+    <div className="logo-wrapper">
+
+<a href="#"><img src="assets/react.svg" alt="" /></a>
+    </div>
     <ThemeSelector/>
 </header>
 </>)
