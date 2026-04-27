@@ -1,4 +1,4 @@
-import Header from "../components/Header"
+import Header from "../components/header/Header.jsx"
 
 const Home = () =>{
 
@@ -8,9 +8,9 @@ const Home = () =>{
         <main>
             {/* Fun Facts About React */}
             <section className="fun-facts-about-react">
-                <div className="container">
+                <div className="container flow">
                     <h2 className="secondary-heading fw-semi-bold capitalize">fun facts about react</h2>
-                    <ul className="fun-facts-list">
+                    <ul className="fun-facts-list | flow" style={{ "--flow-spacer": "0.4rem" }}>
                         <li> Was first released in 2013 </li>
                         <li> Was Originally created by Jordan Walke</li>
                         <li> Has well over 100k stars on GitHub</li>
