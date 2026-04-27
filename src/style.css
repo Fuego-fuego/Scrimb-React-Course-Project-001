@@ -154,3 +154,45 @@ svg {
   }
 }
 
+/* =========================== 
+5. UTILITY CLASSES 
+===========================*/
+.primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+
+.secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.text-accent-400 {
+  color: var(--clr-accent-blue-400);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.container {
+  --max-width: 60em;
+  --padding-inline: 1rem;
+  width: min(var(--max-width), 100% - (var(--padding-inline) * 2));
+  margin-inline: auto;
+}
+
+:where(.flow > *:not(:first-child)) {
+  margin-top:var(--flow-spacing, 1.5rem);
+}
+
