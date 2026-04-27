@@ -1,15 +1,21 @@
 
-const themeSelector = document.createElement('select');
+const ThemeSelector = () => {
 
 
-themeSelector.setAttribute("id","themeSelector");
-themeSelector.setAttribute("aria-label","theme selector");
-themeSelector.setAttribute("name","themeSelector");
-themeSelector.classList= "theme-selector | capitalize"
-themeSelector.innerHTML = `
-        <option value="system" data-theme="system">system</option>
-        <option value="light" data-theme="light">light</option>
-        <option value="dark" data-theme="dark">dark</option>
-       `
+        return (
+        <div class="theme-selector-wrapper">
+                <label for="themeSelector" className="capitalize">theme</label>
+                <select name="themeSelector" id="themeSelector" className="theme-selector"
+                        aria-label="theme selector">
+                        <option value="system" data-theme="system">system</option>
+                        <option value="light" data-theme="light">light</option>
+                        <option value="dark" data-theme="dark">dark</option>
+                </select>
+        </div>
+        
+        )
+}
 
-document.querySelector('#root').appendChild(themeSelector)
+
+
+export default ThemeSelector
