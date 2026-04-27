@@ -1,13 +1,13 @@
-import ThemeSelector from "./components/ThemeSelector";
+import { BrowserRouter,Routes, Route ,} from "react-router-dom"
+import Home from "./pages/Home.jsx"
 
 function App() {
   return (
-  <header>
-    <div className="logo-wrapper">
-      <a href="#"><img src="./assets/react.svg" alt="" /></a>
-    </div>
-   <ThemeSelector/>
-  </header>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </BrowserRouter>
   )
   
 }
