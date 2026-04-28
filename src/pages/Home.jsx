@@ -3,13 +3,13 @@ import Header from "../components/header/Header.jsx"
 const Home = () =>{
 
    return(
-    <body>
+    <>
         <Header/>
         <main>
             {/* Fun Facts About React */}
             <section className="fun-facts-about-react">
-                <div className="container flow">
-                    <h2 className="secondary-heading fw-semi-bold capitalize">fun facts about react</h2>
+                <div className="container">
+                    <h2 className="primary-heading fw-bold capitalize">fun facts about react</h2>
                     <ul className="fun-facts-list | flow" style={{ "--flow-spacer": "0.4rem" }}>
                         <li> Was first released in 2013 </li>
                         <li> Was Originally created by Jordan Walke</li>
@@ -20,7 +20,7 @@ const Home = () =>{
                 </div>
             </section>
         </main>
-    </body>
+    </>
    ) 
 }
 

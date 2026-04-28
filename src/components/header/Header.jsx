@@ -12,7 +12,10 @@ const Header = () =>{
     <div className="primary-header-content-wrapper | flex">
       {/* Logo */}
       <div className="logo-wrapper">
-        <Link to="/"><img src={logo} alt="company logo" /></Link>
+        <Link className="logo-link" to="/">
+        <img src={logo} alt="company logo" className="primary-header-logo" />
+        <p className=" logo-text | text-accent-blue-400 fw-bold">ReactFacts</p>
+        </Link>
       </div>
       <ThemeSelector/>
     </div>
