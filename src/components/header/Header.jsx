@@ -8,7 +8,7 @@ import logo from "../../../assets/react.svg"
 const Header = () =>{
     return (
   <header className="primary-header">
-  <div class="container">
+  <div className="container">
     <div className="primary-header-content-wrapper | flex">
       {/* Logo */}
       <div className="logo-wrapper">
